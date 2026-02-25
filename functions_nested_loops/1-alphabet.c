@@ -3,7 +3,6 @@
 /**
  * main - entry point
  *
- *
  * Return: void
  */
 
