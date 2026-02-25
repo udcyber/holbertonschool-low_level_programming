@@ -2,9 +2,8 @@
 
 /**
  * main - entry point
- * print alphabet
- * in lowercase
- * followed by new line
+ *
+ *
  * Return: void
  */
 
