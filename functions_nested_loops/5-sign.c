@@ -15,7 +15,7 @@ int print_sign(int n)
 	}
 	if (n == 0)
 	{
-		print_sign('0');
+		print_sign(0);
 		return (0);
 	}
 	if (n < 0)
