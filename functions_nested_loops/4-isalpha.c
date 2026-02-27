@@ -2,7 +2,7 @@
 
 /**
  * _isalpha - entry point
- *
+ * @c: check alphabetic character
  *
  * Return: 0
  */
