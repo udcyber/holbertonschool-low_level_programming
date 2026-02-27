@@ -1,15 +1,14 @@
 #include "main.h"
 
 /**
- * islowe = entry point
+ * _islower - entry point
+ * @c: check for lowercas
  *
  * Return: 0
  */
 
 int _islower(int c)
 {
-	int c;
-
 	if (c >= 'a' && c <= 'z')
 	{
 		return (1);
