@@ -21,13 +21,13 @@ void jack_bauer(void)
 		{
 			if (xiaoshi < 10)
 			{
-				_putchar(0);
+				_putchar('0');
 			}
 			_putchar(xiaoshi);
 			_putchar(':');
 			if (fenzhong < 10)
 			{
-				_putchar(0);
+				_putchar('0');
 			}
 			_putchar(fenzhong);
 			_putchar('\n');
