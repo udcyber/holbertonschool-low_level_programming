@@ -19,9 +19,17 @@ void jack_bauer(void)
 	{
 		while (fenzhong <= 59)
 		{
-			_putchar('0');
+			if (xiaoshi < 10)
+			{
+				_putchar('0');
+			}
+			_putchar(xiaoshi + '0');
 			_putchar(':');
-			_putchar('1');
+			if (fenzhong < 10)
+			{
+				_putchar('0');
+			}
+			_putchar(fenzhong + '0');
 			_putchar('\n');
 			fenzhong++;
 		}
