@@ -12,11 +12,11 @@ void jack_bauer(void)
 {
 	int fenzhong, xiaoshi;
 
-	fenzhong = 0;
 	xiaoshi = 0;
 
 	while (xiaoshi <= 23)
 	{
+		fenzhong = 0;
 		while (fenzhong <= 59)
 		{
 			_putchar((xiaoshi / 10) + '0');
