@@ -13,5 +13,5 @@ int print_last_digit(int c)
 
 	LastDigit = c % 10;
 	_putchar(LastDigit);
-	return (0);
-
+	return (LastDigit);
+}
