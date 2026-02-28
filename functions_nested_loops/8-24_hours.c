@@ -26,6 +26,5 @@ void jack_bauer(void)
 			fenzhong++;
 		}
 		xiaoshi++;
-		fenzhong = 0;
 	}
 }
