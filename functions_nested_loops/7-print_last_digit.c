@@ -4,7 +4,7 @@
  * print_last_digit - entry point
  * @c: print last digit of number
  *
- * Return: LastDigit
+ * Return: 0
  */
 
 int print_last_digit(int c)
@@ -15,5 +15,5 @@ int print_last_digit(int c)
 
 	_putchar(LastDigit);
 
-	return (LastDigit);
+	return (c % 10);
 }
