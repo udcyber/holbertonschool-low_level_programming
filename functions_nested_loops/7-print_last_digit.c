@@ -9,9 +9,9 @@
 
 int print_last_digit(int c)
 {
-	int last_digit;
+	int LastDigit;
 
-	last_digit = c % 10;
-	_putchar(last_digit);
+	LastDigit = c % 10;
+	print_last_digit(LastDigit);
 	return (0);
 }
