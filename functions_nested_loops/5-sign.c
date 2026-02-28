@@ -3,7 +3,9 @@
 /**
  * print_sign - entry point
  * @n: print sign of a number
- * Return: 0
+ * Return: 1 if number > than 0
+ * 0 if number is zero
+ * -1 if number < than 0
  */
 
 int print_sign(int n)
@@ -15,13 +17,12 @@ int print_sign(int n)
 	}
 	else if (n == 0)
 	{
-		_putchar(0);
+		_putchar('0');
 		return (0);
 	}
-	else if (n < 0)
+	else
 	{
 		_putchar('-');
 		return (-1);
 	}
-	return (0);
 }
