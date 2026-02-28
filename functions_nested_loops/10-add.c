@@ -9,9 +9,7 @@
  * Return: 0
  */
 
-int add(a, b);
+int add(a, b)
 {
-	add(a, b)
-
 	return (a + b);
 }
