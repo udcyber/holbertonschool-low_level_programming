@@ -35,9 +35,10 @@ int main(void)
 		}
 		else
 		{
-			printf("%d ", n);
+			printf("%c ", n);
 		}
-	printf("\n");
 	}
+	printf("\n");
+
 	return (0);
 }
