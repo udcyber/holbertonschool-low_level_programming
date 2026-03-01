@@ -6,22 +6,28 @@
  * with underscore
  * if n equals zero
  * only print a new line
- * @n: number of times underscore printed
+ * @n: variable
  *
  * Return: 0
  */
 
 void print_line(int n)
 {
-	while (n > 0)
-	{
-		_putchar('_');
-		n++;
-	}
-	_putchar('\n');
+	int r;
 
-	while (n <= 0)
+	r = 0;
+
+	if (n > 0)
 	{
-	_putchar('\n');
+		while (r < n)
+		{
+			_putchar('_');
+			r++;
+		}
+		_putchar('\n');
+	}
+	else
+	{
+		_putchar('\n');
 	}
 }
