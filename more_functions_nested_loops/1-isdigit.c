@@ -9,14 +9,22 @@
 
 int _isdigit(int c)
 {
-	if _isdigit(c)
+	if (_isdigit(c))
 	{
-		_putchar("%c: %d\n", c, _isdigit(c));
+		_putchar(c);
+		_putchar(':');
+		_putchar(' ');
+		_putchar(1);
+		_putchar('\n');
 		return (1);
 	}
 	else
 	{
-		_putchar("%c: %d\n", c, _isdigit(c));
+		_putchar(c);
+		_putchar(':');
+		_putchar(' ');
+		_putchar(0);
+		_putchar('\n');
 		return (0);
 	}
 }
