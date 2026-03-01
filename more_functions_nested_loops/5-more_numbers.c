@@ -20,11 +20,10 @@ void more_numbers(void)
 	{
 		while (a >= 0 && a <= 14)
 		{
-			_putchar(a + '0');
+			_putchar(a);
 			a++;
 		}
-		_putchar('\n');
 		b++;
+		_putchar('\n');
 	}
 }
-
