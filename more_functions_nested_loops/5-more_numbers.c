@@ -2,8 +2,7 @@
 
 /**
  * more_numbers - entry point
- * print 10 times the numbers
- * from 0 to 14
+ * print ten times the numbers
  * followed by a new line
  *
  * Return: 0
@@ -11,15 +10,23 @@
 
 void more_numbers(void)
 {
-	int a;
-	char b;
+	int a, b;
 
-	for (a = 0; a <= 10; a++)
+	a = 0;
+
+	while (a <= 9)
 	{
-		for (b = 0; b <= 14 ; b++)
+		b = 0;
+		while (b <= 14)
 		{
-			_putchar(b);
+			if (b > 9)
+			{
+				_putchar(b / 10 + '0');
+			}
+			_putchar(b % 10 + '0');
+			b++;
 		}
+		a++;
 		_putchar('\n');
 	}
 }
