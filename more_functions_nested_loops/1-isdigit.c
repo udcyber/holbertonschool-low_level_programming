@@ -9,20 +9,12 @@
 
 int _isdigit(int c)
 {
-	_putchar(c);
-	_putchar(':');
-	_putchar(' ');
-
-	if (_isdigit(c))
+	if (c >= '0' && c <= '9')
 	{
-		_putchar(1);
-		_putchar('\n');
 		return (1);
 	}
 	else
 	{
-		_putchar(0);
-		_putchar('\n');
 		return (0);
 	}
 }
