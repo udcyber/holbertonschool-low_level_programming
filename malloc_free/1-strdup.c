@@ -23,32 +23,26 @@ char *_strdup(char *str)
 
 	size = 0;
 
-	arr = malloc(sizeof(str) * size);
-
-	x = 0;
-
 	if (str == NULL)
 	{
 		return (NULL);
 	}
 
-	while (str[x] != '\0')
+	while (str[size])
 	{
 		size++;
-		x++;
 	}
+
+	arr = malloc(size + 1);
 
 	if (arr == NULL)
 	{
 		return (NULL);
 	}
 
-	x = 0;
-
-	while (str[x] != '\0')
+	for (x = 0; x <= size; x++)
 	{
 		arr[x] = str[x];
-		x++;
 	}
 	return (arr);
 }
