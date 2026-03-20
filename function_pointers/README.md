@@ -8,6 +8,10 @@ prints a name.
 Prototype:  
 ```void print_name(char *name, void (*f)(char *));```
 
+desired output:  
+```Hello, my name is Bob```  
+```Hello, my uppercase name is BOB DYLAN```
+
 -------------------------------------------------------
 1. If you spend too much time thinking about a thing, you'll never get it done
 
