@@ -1,6 +1,14 @@
 C - Function pointers
 -------------------------------------------------------
-0. What's my name
+#### Table of contents  
+- [0. What's my name](#0-whats-my-name)
+- [1. If you spend too much time thinking about a thing, you'll never get it done](#1-if-you-spend-too-much-time-thinking-about-a-thing-youll-never-get-it-done)
+- [2. To hell with circumstances; I create opportunities](#2-to-hell-with-circumstances-i-create-opportunities)
+- [3. A goal is not always meant to be reached, it often serves simply as something to aim at](#3-a-goal-is-not-always-meant-to-be-reached-it-often-serves-simply-as-something-to-aim-at)
+- [Requirements](#requirements)
+
+-------------------------------------------------------
+#### 0. What's my name
 
 Write a function that <mark>prints a name</mark>.
 
@@ -14,9 +22,10 @@ desired output:
 Hello, my name is Bob  
 Hello, my uppercase name is BOB DYLAN
 ```
+[^](#table-of-contents)
 
 -------------------------------------------------------
-1. If you spend too much time thinking about a thing, you'll never get it done
+#### 1. If you spend too much time thinking about a thing, you'll never get it done
 
 Write a <mark>function that executes a function given as a parameter</mark> on each element of an array.
 
@@ -41,14 +50,17 @@ desired output:
 0x400
 0x1000
 ```
--------------------------------------------------------
-2. To hell with circumstances; I create opportunities
+[^](#table-of-contents)
 
-Write a function that  
-searches for an integer.
+-------------------------------------------------------
+#### 2. To hell with circumstances; I create opportunities
+
+Write a function that <mark>searches for an integer</mark>.
 
 - Prototype:  
-```int int_index(int *array, int size, int (*cmp)(int));```  
+```
+int int_index(int *array, int size, int (*cmp)(int));
+```  
 - where ```size``` is the number of elements in the array ```array```
 - ```cmp``` is a pointer to the function to be used to compare values
 - ```int_index``` returns the index of the first element for which the ```cmp``` function does not return ```0```
@@ -61,9 +73,10 @@ desired output:
 1
 2
 ```
+[^](#table-of-contents)
 
 -------------------------------------------------------
-3. A goal is not always meant to be reached, it often serves simply as something to aim at
+#### 3. A goal is not always meant to be reached, it often serves simply as something to aim at
 
 Write a program that performs simple operations.
 
@@ -140,15 +153,18 @@ You are not allowed to code any other function than main in this file
 You are not allowed to directly call op_add, op_sub, op_mul, op_div or op_mod from the main function
 You have to use atoi to convert arguments to int
 You are not allowed to use any kind of loop
-You are allowed to use a maximum of 3 if statements
+You are allowed to use a maximum of 3 if statements  
+[^](#table-of-contents)
 
 -------------------------------------------------------
+#### Requirements: 
 
-Requirements:  
 - All your files will be compiled on Ubuntu 20.04 LTS using ```gcc```, using the options ```-Wall -Werror -Wextra -pedantic -std=gnu89```
 - You are not allowed to use global variables
 - No more than 5 functions per file
 - The only C standard library functions allowed are ```malloc```, ```free``` and ```exit```. Any use of functions like ```printf```, ```puts```, ```calloc```, ```realloc``` etc… is forbidden
 - You are allowed to use ```_putchar```
 - The prototypes of all your functions and the prototype of the function ```_putchar``` should be included in your header file called ```function_pointers.h```
-- All your header files should be include guarded
+- All your header files should be include guarded  
+
+[^](#table-of-contents)
