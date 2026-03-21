@@ -2,40 +2,65 @@ C - Function pointers
 -------------------------------------------------------
 0. What's my name
 
-Write a function that  
-prints a name.
+Write a function that <mark>prints a name</mark>.
 
 Prototype:  
-```void print_name(char *name, void (*f)(char *));```
+```
+void print_name(char *name, void (*f)(char *));
+```
 
 desired output:  
-```Hello, my name is Bob```  
-```Hello, my uppercase name is BOB DYLAN```
+```
+Hello, my name is Bob  
+Hello, my uppercase name is BOB DYLAN
+```
 
 -------------------------------------------------------
 1. If you spend too much time thinking about a thing, you'll never get it done
 
-Write a function that  
-executes a function given as a parameter on each element of an array.
+Write a <mark>function that executes a function given as a parameter</mark> on each element of an array.
 
 Prototype:  
-```void array_iterator(int *array, size_t size, void (*action)(int));```  
-where size is the size of the array and  
-action is a pointer to the function you need to use
+```
+void array_iterator(int *array, size_t size, void (*action)(int));
+```  
 
+where ```size``` is the size of the array and  
+```action``` is a pointer to the function you need to use
+
+desired output:  
+```
+0
+98
+402
+1024
+4096
+0x0
+0x62
+0x192
+0x400
+0x1000
+```
 -------------------------------------------------------
 2. To hell with circumstances; I create opportunities
 
 Write a function that  
 searches for an integer.
 
-Prototype:  
+- Prototype:  
 ```int int_index(int *array, int size, int (*cmp)(int));```  
-where size is the number of elements in the array array
-cmp is a pointer to the function to be used to compare values
-int_index returns the index of the first element for which the cmp function does not return 0
-If no element matches, return -1
-If size <= 0, return -1
+- where ```size``` is the number of elements in the array ```array```
+- ```cmp``` is a pointer to the function to be used to compare values
+- ```int_index``` returns the index of the first element for which the ```cmp``` function does not return ```0```
+- If no element matches, return ```-1```
+- If size <= ```0```, return ```-1```
+
+desired output:  
+```
+2
+1
+2
+```
 
 -------------------------------------------------------
 3. A goal is not always meant to be reached, it often serves simply as something to aim at
@@ -118,3 +143,12 @@ You are not allowed to use any kind of loop
 You are allowed to use a maximum of 3 if statements
 
 -------------------------------------------------------
+
+Requirements:  
+- All your files will be compiled on Ubuntu 20.04 LTS using ```gcc```, using the options ```-Wall -Werror -Wextra -pedantic -std=gnu89```
+- You are not allowed to use global variables
+- No more than 5 functions per file
+- The only C standard library functions allowed are ```malloc```, ```free``` and ```exit```. Any use of functions like ```printf```, ```puts```, ```calloc```, ```realloc``` etc… is forbidden
+- You are allowed to use ```_putchar```
+- The prototypes of all your functions and the prototype of the function ```_putchar``` should be included in your header file called ```function_pointers.h```
+- All your header files should be include guarded
