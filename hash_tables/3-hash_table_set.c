@@ -33,7 +33,7 @@ int hash_table_set(hash_table_t *ht, const char *key, const char *value)
 		}
 	}
 
-	new_ht = _node(key, value);
+	new_ht = mkn(key, value);
 	if (new_ht == NULL)
 	{
 		return (0);
@@ -43,4 +43,46 @@ int hash_table_set(hash_table_t *ht, const char *key, const char *value)
 	ht->array[x] = new_ht;
 
 	return (1);
+}
+
+/**
+ * mkn - maken new node
+ * @key: key
+ * @value: value of key
+ * Return: new node or NULL
+ */
+hash_node_t *mkn(const char *key, const char *value);
+{
+	hash_node_t *new_n;
+
+	if (key == NULL || strcmp(key, "") == 0 || value == NULL)
+	{
+		return (NULL);
+	}
+
+	new_n = malloc(sizeof(hash_node_t));
+
+	if (new_n == NULL)
+		return (NULL);
+
+	new_n->key = strdup(key);
+
+	if (new_n->key == NULL)
+	{
+		free(new_n);
+		return (NULL);
+	}
+	new_n->value = strdup(value);
+
+	if (new_n->value == NULL)
+	{
+		free(new_n->key);
+		free(new_n);
+
+		return (NULL);
+	}
+
+	new_n->next = NULL;
+
+	return (new_n);
 }
