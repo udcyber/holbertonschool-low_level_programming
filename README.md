@@ -17,3 +17,6 @@
 14. C - Singly linked lists —— singly_linked_lists
 15. C - Doubly linked lists —— doubly_linked_lists
 16. C - Hash tables —— hash_tables
+17. C - Recursion —— recursion
+18. C - File I/O —— file_io
+19. C - Simple Calculator —— simple-calculator
